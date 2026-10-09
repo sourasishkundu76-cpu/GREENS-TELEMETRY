@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #02170f;
+  --color-surface-dim: #02170f;
+  --color-surface-bright: #283e34;
+  --color-surface-container-lowest: #00120a;
+  --color-surface-container-low: #091f17;
+  --color-surface-container: #0e241b;
+  --color-surface-container-high: #182e25;
+  --color-surface-container-highest: #23392f;
+  --color-surface-variant: #23392f;
+  --color-on-surface: #cfe8da;
+  --color-on-surface-variant: #bbcabf;
+  --color-inverse-surface: #cfe8da;
+  --color-outline: #86948a;
+  --color-outline-variant: #3c4a42;
+  --color-primary: #4edea3;
+  --color-on-primary: #003824;
+  --color-primary-container: #10b981;
+  --color-on-primary-container: #00422b;
+  --color-primary-fixed: #6ffbbe;
+  --color-primary-fixed-dim: #4edea3;
+  --color-secondary: #4cd7f6;
+  --color-on-secondary: #003640;
+  --color-secondary-container: #03b5d3;
+  --color-secondary-fixed: #acedff;
+  --color-secondary-fixed-dim: #4cd7f6;
+  --color-tertiary: #62dcad;
+  --color-on-tertiary: #003827;
+  --color-tertiary-container: #37b78a;
+  --color-tertiary-fixed-dim: #62dcad;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-margin: 2rem;
+  --spacing-gutter: 1.25rem;
+}
+
+@layer base {
+  body {
+    background-color: #02170f;
+    color: #cfe8da;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom typography scale matching design tokens */
+.font-headline-xl {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .font-headline-xl {
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+
+.font-headline-lg {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-title-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-telemetry-metric {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-telemetry-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.font-code-sm {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #02170f;
+}
+::-webkit-scrollbar-thumb {
+  background: #182e25;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #23392f;
+}

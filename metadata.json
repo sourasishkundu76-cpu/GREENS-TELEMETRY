@@ -1,0 +1,6 @@
+{
+  "name": "Green Guardians Bio-Telemetry OS",
+  "description": "Precision bio-telemetry operating system for botanical monitoring, multi-depth ESP32 soil sensor arrays, smart rhizosphere spectroscopy, and automated agronomy remediation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
